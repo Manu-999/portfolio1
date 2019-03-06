@@ -7,42 +7,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Manuel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Pridi" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <h1 class="title">Manuel Balbás Arribas</h1>
-        <h2 class="subtitle">Portfolio personal</h2>
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li class="navbar-item"><a href="#">Inicio</a></li>
-                <li class="navbar-item"><a href="#cv">CV</a></li>
-                <li class="navbar-item"><a href="#experience">Experiencia</a></li>
-            </ul>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+    <header class="header">
+        <div class="title-container animated fadeIn slow">
+            <h1 class="title animated slideInUp slow">Manuel Balbás</h1>
+        </div>
+        <h2 class="subtitle animated slideInLeft delay-1s slower">Aquí irá un texto curioso que se me ocurrirá más
+            adelante. (Espero) Aquí irá un texto curioso que se me ocurrirá más
+            adelante. (Espero) Aquí irá un texto curioso que se me ocurrirá más
+            adelante. (Espero) Aquí irá un texto curioso que se me ocurrirá más
+            adelante. (Espero)
+        </h2>
+        <div class="scroll-icon animated infinite bounce slow">
+            <a href="#navbar" class="scroll-button"><i class="fas fa-angle-down"></i></a>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="#cv" class="menu-item1">¿De dónde salgo?</a>
+            <a href="#experience" class="menu-item2">¿Qué he hecho?</a>
+            <a href="#contact" class="menu-item3">¿Hablamos?</a>
         </nav>
     </header>
-    <section id="img">
-        <img src="./media/manuel.jpg" alt="my-img" class="img">
-    </section>
-    <section id="cv"></section>
-    <section id="experience"></section>
-    <section id="form"></section>
-    <h4 class="">Si quieres contactar conmigo utiliza este formulario</h4>
-    <form action="post">
-        <label for="name">Nombre</label>
-        <input type="text" name="name"><br />
-        <label for="surname">Apellidos</label>
-        <input type="text" name="surname"><br />
-        <input type="textarea" name="textarea" placeholder="Escribe aquí tu texto" rows="4" cols="50"><br />
-        <input type="submit" value="Enviar">
-    </form>
-    <footer>
-        <small>Manuel Balbás Arribas © 2019 </small>
+
+
+
+    <footer class="footer">
+        <small class="footer-text">Manuel Balbás © 2019</small>
     </footer>
+
 </body>
+<script src="./js/index.js"></script>
 
 
 </html>
-
-
-<!--palabras en negrita y cursiva, links, desplegable de opciones en el formulario y textarea(placeholder).-->
