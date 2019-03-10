@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manuel Balbás DEV</title>
+    <title>Manuel Balbás</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./node_modules/animate.css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=B612+Mono|Pridi" rel="stylesheet">
@@ -19,43 +19,79 @@
     <div id="top"></div>
     <div id="bottom"></div>
     <header class="header">
-        <div class="title-container animated fadeIn slow">
+        <span class="title-container animated fadeIn slower">
+            <img class="foto-1 animated slideInUp slow" src="./media/me.JPG" alt="Manuel">
             <h1 class="title animated slideInUp slow">Manuel Balbás</h1>
-        </div>
-        <h2 class="subtitle animated slideInLeft delay-1s slower">Aquí irá un texto curioso que se me ocurrirá más
-            adelante. (Espero) Aquí irá un texto curioso que se me ocurrirá más
-            adelante. (Espero) Aquí irá un texto curioso que se me ocurrirá más
-            adelante. (Espero) Aquí irá un texto curioso que se me ocurrirá más
-            adelante. (Espero)
+        </span>
+        <h2 class="subtitle animated slideInLeft delay-1s slower">
+            Soy un apasionado digital. Me encanta internet y sus infinitas posibilidades. Actualmente estoy centrado en
+            el marketing digital y el desarrollo web. Soy socio y fundador de mi propia agencia digital la cual se
+            llama <a class="pepitas-link" href="https://pepitasdeorofactory.com">Pepitas de Oro Factory</a>
         </h2>
         <div class="scroll-icon animated infinite bounce slow">
             <a href="#navbar" class="scroll-button"><i class="fas fa-angle-down"></i></a>
         </div>
-        <nav class="navbar" id="navbar">
-            <a href="#cv" class="menu-item1">¿De dónde salgo?</a>
-            <a href="#experience" class="menu-item2">¿Qué he hecho?</a>
-            <a href="#contact" class="menu-item3">¿Hablamos?</a>
-        </nav>
     </header>
+    <nav class="navbar" id="navbar">
+        <div class="container-1">
+            <a href="#cv" class="menu-item1">¿De dónde salgo?<a>
+        </div>
+        <div class="container-2">
+            <a href="#experience" class="menu-item2">¿Qué he hecho?</a>
+        </div>
+        <div class="container-3">
+            <a href="#contact" class="menu-item3">¿Hablamos?</a>
+        </div>
+        <div class="container-4">
+            <a href="#bonus" class="menu-item4">Bonus Track</a>?</a>
+        </div>
 
-    <section id="cv">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid odit consequatur sint ea neque, praesentium
-            provident nemo quam totam alias eum quaerat voluptates porro nostrum et repudiandae ipsam veritatis dolores.
+    </nav>
+    <section class="section" id="cv">
+        <div></div>
+        <p class="cv-text">
+            Durante los años he ido sumergiéndome en el mundo digital. Empecé por la imagen y el sonido y fui
+            mudándome al mundo de internet, empezando por el marketing digital y acabando en el desarrollo web.
         </p>
+        <div class="scroll-icon animated infinite bounce slow">
+            <a href="#navbar" class="scroll-button"><i class="fas fa-angle-up"></i></a>
+        </div>
     </section>
 
-    <section id="experience">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid odit consequatur sint ea neque, praesentium
-            provident nemo quam totam alias eum quaerat voluptates porro nostrum et repudiandae ipsam veritatis dolores.
+    <section class="section" id="experience">
+        <p class="experience-text">Actualmente
         </p>
+        <div class="scroll-icon animated infinite bounce slow">
+            <a href="#navbar" class="scroll-button" id="scroll"><i class="fas fa-angle-up"></i></a>
+        </div>
     </section>
 
-    <section id="contact">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid odit consequatur sint ea neque, praesentium
-            provident nemo quam totam alias eum quaerat voluptates porro nostrum et repudiandae ipsam veritatis dolores.
-        </p>
+    <section class="section" id="contact">
+        <form class="form-contact" action="post">
+            <label id="name" class="form-label" for="name">Nombre</label>
+            <input class="input" type="text" name="name" id="name">
+            <label class="form-label" for="email">Email</label>
+            <input class="input" type="email" name="email" id="emial">
+            <label class="form-label" for="message">Mensaje</label>
+            <input class="input-message" type="textarea" name="message" id="message">
+            <input class="input" type="submit" name="submit" id="submit">
+        </form>
+        <div class="scroll-icon animated infinite bounce slow">
+            <a href="#navbar" class="scroll-button"><i class="fas fa-angle-up"></i></a>
+        </div>
     </section>
 
+    <section class="section" id="bonus">
+        <p class="section-bonus">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid odit consequatur
+            sint ea neque,
+            praesentium
+            provident nemo quam totam alias eum quaerat voluptates porro nostrum et repudiandae ipsam veritatis
+            dolores.
+        </p>
+        <div class="scroll-icon animated infinite bounce slow">
+            <a href="#navbar" class="scroll-button"><i class="fas fa-angle-up"></i></a>
+        </div>
+    </section>
 
 
     <footer class="footer">

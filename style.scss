@@ -1,0 +1,208 @@
+@import "./common.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    background-image: url("./media/ep_naturalblack.png");
+}
+
+#top, #bottom, #left, #right {
+    background: $border-color;
+    position: fixed;
+    margin: 10px;
+    z-index: 1;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 10px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 10px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+.header{
+    height: 100vh;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto-1 {
+    height: 25vh;
+    width: 13.7vw;
+    align-self: flex-end;
+    border-radius: 150px;
+    border: 5px solid $border-color;
+}
+
+.title {
+    color: $title-color;
+    font-family: $font-title;
+    font-size: 8rem;
+    margin: 20px 80px 80px 20px;
+    text-align: right;
+    text-shadow: $title-shadow;
+}
+
+.subtitle {
+    color: $text-color;
+    font-family: $font-text;
+    font-size: 3rem;
+    padding: 50px 50px 10px 50px;
+    text-align: justify; 
+}
+
+.pepitas-link {
+    color: $text-color;
+    
+}
+
+.scroll-icon{
+    color: #d7eef2;
+    font-size: 8rem;
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+}
+
+.scroll-button {
+    color: $border-color;
+}
+
+.navbar{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14vh;
+}
+
+@for $i from 1 through 4{
+    @if $i {
+        .container-#{$i}{
+            height: 30%;
+        }
+    }
+}
+
+.menu-item1 {
+    font-family: $font-text;
+    text-decoration: none;
+    font-size: 4rem;
+    color: $title-color;
+    justify-content: flex-end;
+    /*margin: 8% 1% 0% 10%;*/
+}
+.menu-item2 {
+    font-family: $font-text;
+    text-decoration: none;
+    font-size: 4rem;
+    color: $title-color;
+    justify-content: flex-start;
+    /*margin: 7% 0 1% 50%;*/
+}
+.menu-item3 {
+    font-family: $font-text;
+    text-decoration: none;
+    font-size: 4rem;
+    color: $title-color;
+    justify-content: center;
+    /*margin: 10% 0 1% 30%;*/
+} 
+.menu-item4 {
+    font-family: $font-text;
+    text-decoration: none;
+    font-size: 4rem;
+    color: $title-color;
+    justify-content: center;
+}
+
+.section{
+    height: 100vh;
+    width: 100vw;
+}
+
+#scroll{
+    margin-bottom: 2vh;
+}
+
+.cv-text{
+    width: 33%;
+    font-family: $font-text;
+    color: aliceblue;
+    font-size: 1.29rem;
+    text-align: justify; 
+    margin: auto;
+    line-height: 1.7;
+}
+
+/*.marketing{
+    background-color:;
+    font-family: 'B612 Mono';
+    font-size: 2rem;
+    border: 1px solid;
+    border-color: aliceblue;
+    border-radius: 300px;
+    color: aliceblue;
+    padding: 100px 20px 100px 20px;
+}*/
+
+.experience-text{
+    font-family: $font-text;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.form-label{
+    color: $text-color;
+    font-size: 5rem;
+    font-family: $font-text;
+}
+
+#name{
+    margin-top: 5vh;
+}
+
+.input {
+    font-size: 3rem;
+    font-family: $font-text;
+    margin: 1vh;
+}
+
+.input-message {
+    width: 38vw;
+    height: 25vh;
+    font-family: $font-text;
+    font-size: 1.4rem;
+}
+
+.footer{
+    text-align: right;
+    margin: 50px;
+}
+
+.footer-text {
+    color: $title-color;
+    margin: 20px;
+    font-family: $font-text;
+    font-size: 2rem;
+}
