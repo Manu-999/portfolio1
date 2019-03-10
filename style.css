@@ -161,6 +161,18 @@ body {
   margin-bottom: 2vh;
 }
 
+.habilities {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.habilities .habilities-item {
+  font-family: "B612 Mono";
+  font-size: 3rem;
+  color: #00bbf0;
+}
+
 .cv-text {
   width: 33%;
   font-family: "B612 Mono";
@@ -200,10 +212,6 @@ body {
   font-family: "B612 Mono";
 }
 
-#name {
-  margin-top: 5vh;
-}
-
 .input {
   font-size: 3rem;
   font-family: "B612 Mono";
@@ -215,6 +223,12 @@ body {
   height: 25vh;
   font-family: "B612 Mono";
   font-size: 1.4rem;
+}
+
+#submit {
+  width: 20vw;
+  font-size: 2rem;
+  font-family: "B612 Mono";
 }
 
 .footer {

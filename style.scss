@@ -138,6 +138,20 @@ body{
     margin-bottom: 2vh;
 }
 
+.habilities {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    .habilities-item{
+        font-family: $font-text;
+        font-size: 3rem;
+        color: $text-color;
+    }
+}
+
+
 .cv-text{
     width: 33%;
     font-family: $font-text;
@@ -178,10 +192,6 @@ body{
     font-family: $font-text;
 }
 
-#name{
-    margin-top: 5vh;
-}
-
 .input {
     font-size: 3rem;
     font-family: $font-text;
@@ -193,6 +203,12 @@ body{
     height: 25vh;
     font-family: $font-text;
     font-size: 1.4rem;
+}
+
+#submit {
+    width: 20vw;
+    font-size: 2rem;
+    font-family: $font-text;
 }
 
 .footer{
